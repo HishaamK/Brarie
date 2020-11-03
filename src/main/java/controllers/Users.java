@@ -51,7 +51,7 @@ public class Users{
             ResultSet results = ps.executeQuery();
             if (results.next() == true) {
                 String CorrectPassword = results.getString(1);
-                if (generateHash(Password).equals(CorrectPassword)) {
+                if (generateHash(Password).equals(generateHash(CorrectPassword))) {
                     String Token = UUID.randomUUID().toString();
                     PreparedStatement ps1 = Main.db.prepareStatement("UPDATE User SET Token = ? WHERE Username = ?");
                     ps1.setString(1, Token);
