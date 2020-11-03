@@ -1,8 +1,8 @@
 function postUserLogin() {
     console.log("Invoked postUserLogin() ");
 
-    var url = "/user/AttemptLogin";
-    var formData = new FormData(document.getElementById("LoginForm"));
+    let url = "/users/AttemptLogin";
+    let formData = new FormData(document.getElementById("LoginForm"));
 
     fetch(url, {
         method: "POST",
