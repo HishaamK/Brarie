@@ -46,14 +46,14 @@ public class Users{
     public String AttemptLogin(@FormDataParam("Username") String Username, @FormDataParam("Password") String Password) {
         System.out.println("Started AttemptLogin() ond API Path User/AttemptLogin");
         try{
-            PreparedStatement ps = Main.db.prepareStatement("SELECT Password FROM Users WHERE Username = ?");
+            PreparedStatement ps = Main.db.prepareStatement("SELECT Password FROM User WHERE Username = ?");
             ps.setString(1, Username);
             ResultSet results = ps.executeQuery();
             if (results.next() == true) {
                 String CorrectPassword = results.getString(1);
                 if (generateHash(Password).equals(CorrectPassword)) {
                     String Token = UUID.randomUUID().toString();
-                    PreparedStatement ps1 = Main.db.prepareStatement("UPDATE Users SET Token = ? WHERE Username = ?");
+                    PreparedStatement ps1 = Main.db.prepareStatement("UPDATE User SET Token = ? WHERE Username = ?");
                     ps1.setString(1, Token);
                     ps1.setString(2, Username);
                     ps1.executeUpdate();
