@@ -1,6 +1,40 @@
-.header{
-    text-align: center;
+* {
+    padding:0;
+    margin:0;
+}
+
+.header {
     background-color: #330066;
     color: #808080;
-    font-size: 12pt;
+    position: sticky;
+    text-align: center;
+}
+.header li {
+    float: none;
+    display: inline-block;
+    padding: 1px 50px;
+    font-size: 14pt;
+    font-family: Helvetica;
+    position: relative;
+    bottom: 25px;
+    margin-bottom: -25px;
+    .WelcomeBack {
+    font-size: 5pt;
+    }
+}
+
+.WelcomeBack {
+    font-size: 5pt;
+}
+
+.logo {
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    display: block;
+}
+
+
+body {
+    background-color: #190033;
 }

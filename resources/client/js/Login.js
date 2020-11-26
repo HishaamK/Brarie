@@ -15,7 +15,7 @@ function postUserLogin() {
     }else {
         Cookies.set("Token", response.Token);
         Cookies.set("Username", response.Username);
-        window.open("index.html", "_self");
+        window.open("Dashboard.html", "_self");
     }
 });
 
