@@ -1,0 +1,20 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: -50px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content{
+    position: fixed;
+    font-family: Helvetica;
+    left: 650px;
+    bottom: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #330066;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
