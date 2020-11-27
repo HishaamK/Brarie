@@ -1,9 +1,9 @@
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: -50px;
+    right: -40px;
+    bottom: -210px;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 150%;
 }
 
 .content{
@@ -12,9 +12,29 @@
     left: 650px;
     bottom: 650px;
     background: rgba(0, 0, 0, 0.5);
-    color: #330066;
+    color: rebeccapurple;
     width: 30%;
     padding: 20px;
     text-align: center;
 }
 
+.typewriter {
+    overflow: hidden;
+    border-right: .15em rebeccapurple;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to{border-color: transparent}
+    50% {border-color: rebeccapurple}
+}
