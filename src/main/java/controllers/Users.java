@@ -49,7 +49,7 @@ public class Users{
             PreparedStatement ps = Main.db.prepareStatement("SELECT Password FROM User WHERE Username = ?");
             ps.setString(1, Username);
             ResultSet results = ps.executeQuery();
-            if (results.next() == true) {
+            if (results.next()) {
                 String CorrectPassword = results.getString(1);
                 if (generateHash(Password).equals(generateHash(CorrectPassword))) {
                     String Token = UUID.randomUUID().toString();

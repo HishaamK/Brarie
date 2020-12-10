@@ -6,7 +6,6 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
-
 import org.sqlite.SQLiteConfig;
 
 import java.sql.Connection;
@@ -29,6 +28,8 @@ public class Main {
         Server server = new Server(8081);                   // prepare our Jetty Server to listen on port 8081
         ServletContextHandler context = new ServletContextHandler(server, "/");  // instantiate the Server
         context.addServlet(servlet, "/*");                  // connect the Servlet to the Server
+
+
 
         try {
             server.start();                                 // start the server
