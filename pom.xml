@@ -131,6 +131,12 @@
             <version>2.3.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.uwetrottmann.thetvdb-java</groupId>
+            <artifactId>thetvdb-java</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+
     </dependencies>
 
 
