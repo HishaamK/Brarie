@@ -1,0 +1,62 @@
+body {
+    background-color: #190033;
+}
+
+.header {
+    background-color: #330066;
+    position: sticky;
+    text-align: center;
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+.header li {
+    float: none;
+    display: inline-block;
+    padding: 1px 50px;
+    position: relative;
+    bottom: 25px;
+    margin-bottom: -25px;
+}
+
+.logo {
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    display: block;
+}
+
+.LoginForm {
+    color: #808080;
+    margin-left: 850px;
+    margin-top: 300px;
+}
+
+.BigLogo {
+    margin-left: 875px;
+    margin-top: 250px;
+    position: absolute;
+}
+
+.Password {
+   margin-left: 3px;
+}
+
+.Login {
+    background-color: #7f00ff;
+    border: none;
+    color: #808080;
+    padding: 15px 32px;
+}
+
+.Register {
+    background-color: #7f00ff;
+    border: none;
+    color: #808080;
+    padding: 15px 32px;
+    margin-left: 32px;
+}
+

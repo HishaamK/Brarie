@@ -6,13 +6,21 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.js"></script>
     <script src = /client/js/Login.js></script>
 </head>
+
+<ul class="header">
+    <li><img src="img/LOGO2ALPHAnew.png" alt="Logo" class = "logo" width="90"></li>
+</ul>
+
+<img class= "BigLogo" src="img/LOGO1ALPHAnew.png" alt = "logo" width="200">
+
 <body>
-<form id="LoginForm">
+<form class="LoginForm">
     <label>Username: </label>
-    <input type ="text" name = "Username" id= "Username"><br><br>
+    <input type = "text" name = "Username" id = "Username"><br><br>
     <label>Password: </label>
-    <input type = "text" name="Password" id="Password"><br><br>
-    <button class = "button" onclick="postUserLogin()">Login</button>
+    <input type = "text" name = "Password" id = "Password" class = "Password"><br><br>
 </form>
+<button class = "Login" onclick="postUserLogin()">Login</button>
+<button class = "Register" onclick="Register()">Register</button>
 </body>
 </html>
